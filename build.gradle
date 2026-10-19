@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Selenium
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.21.0'
+
+    // Cucumber
+    testImplementation 'io.cucumber:cucumber-java:7.18.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.18.0'
+
+    // JUnit
+    testImplementation 'junit:junit:4.13.2'
+
+    // WebDriverManager
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
+
+    // Assert
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'
+}
+
+//test {
+//    useJUnitPlatform()
+//}
